@@ -1,0 +1,14 @@
+{
+    "name": "tylerwoonton/laravel-kpi",
+    "description": "A simple package for reporting on KPIs in your Laravel/Lumen applications.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tyler Woonton",
+            "email": "tylerwoonton11@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
