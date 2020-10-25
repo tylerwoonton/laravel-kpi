@@ -34,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "UKFast\\LaravelKpi\\": "src"
+            "TylerWoonton\\LaravelKpi\\": "src"
         }
     },
     "autoload-dev": {
@@ -48,7 +48,7 @@
                 "TylerWoonton\\LaravelKpi\\KpiServiceProvider"
             ],
             "aliases": {
-                "KPI": "UKFast\\LaravelKpi\\Facades\\KPI"
+                "KPI": "TylerWoonton\\LaravelKpi\\Facades\\KPI"
             }
         }
     },
