@@ -36,7 +36,7 @@ php artisan vendor:publish --provider="TylerWoonton\LaravelKpi\KpiServiceProvide
 ## Usage
 
 
-### Full Page Tests
+### Storing KPI Data
 
 You can store KPI data using the `KPI` facade:
 
