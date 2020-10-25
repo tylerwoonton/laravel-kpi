@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateKpiEventsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create($this->getTableName(), function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('kpi_id')->unsigned();
+            $table->longText('data')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists($this->getTableName());
+    }
+
+    /**
+     * Get name for KPI events table
+     *
+     * @return string
+     */
+    private function getTableName()
+    {
+        return config('kpi.database.tables.kpi_events', 'laravel_kpi_events');
+    }
+}

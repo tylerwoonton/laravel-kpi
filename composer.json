@@ -1,14 +1,57 @@
 {
     "name": "tylerwoonton/laravel-kpi",
     "description": "A simple package for reporting on KPIs in your Laravel/Lumen applications.",
+    "keywords": [
+        "laravel-kpi",
+        "lumen-kpi",
+        "laravel kpi",
+        "lumen kpi",
+        "laravel",
+        "lumen"
+    ],
+    "homepage": "https://github.com/tylerwoonton/laravel-kpi",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Tyler Woonton",
-            "email": "tylerwoonton11@gmail.com"
+            "email": "tylerwoonton11@gmail.com",
+            "homepage": "https://tylerwoonton.com",
+            "role": "Author"
         }
     ],
+    "require": {
+        "php": ">=5.6",
+        "ext-json": "*",
+        "illuminate/support": "^5.4|^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=5.0",
+        "orchestra/testbench": "^3.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "UKFast\\LaravelKpi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TylerWoonton\\LaravelKpi\\KpiServiceProvider"
+            ],
+            "aliases": {
+                "KPI": "UKFast\\LaravelKpi\\Facades\\KPI"
+            }
+        }
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true
 }
