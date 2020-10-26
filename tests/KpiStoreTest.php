@@ -15,10 +15,8 @@ class KpiStoreTest extends TestCase
         return ['TylerWoonton\LaravelKpi\KpiServiceProvider'];
     }
 
-    public function setUp(): void
+    public function runMigrations()
     {
-        parent::setUp();
-
         include_once __DIR__ . '/../migrations/create_kpis_table.php.stub';
         include_once __DIR__ . '/../migrations/create_kpi_events_table.php.stub';
 
@@ -29,6 +27,8 @@ class KpiStoreTest extends TestCase
     /** @test */
     public function can_store_existing_kpi()
     {
+        $this->runMigrations();
+
         $slug = 'test';
         $data = ['foo' => 'bar'];
 
@@ -46,6 +46,8 @@ class KpiStoreTest extends TestCase
     /** @test */
     public function can_store_new_kpi()
     {
+        $this->runMigrations();
+
         $slug = 'new';
         $data = ['foo' => 'bar'];
 

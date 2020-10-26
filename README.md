@@ -1,5 +1,9 @@
 # Laravel KPI
 
+![Packagist Version](https://img.shields.io/packagist/v/tylerwoonton/laravel-kpi?color=%234299E1&style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/tylerwoonton/laravel-kpi?color=%234299E1&style=for-the-badge)](https://github.com/tylerwoonton/laravel-kpi/blob/master/LICENCE)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tylerwoonton/laravel-kpi/Run%20tests?color=4299E1&style=for-the-badge)
+
 A simple package for reporting on KPIs in your Laravel/Lumen applications.
 
 
