@@ -11,7 +11,7 @@ A simple package for reporting on KPIs in your Laravel/Lumen applications.
 
 To install the package:
 
-Run  `composer require ukfast/laravel-kpi` to add the package to your dependencies.
+Run  `composer require tylerwoonton/laravel-kpi` to add the package to your dependencies.
 
 This will automatically install the package to your vendor folder.
 
