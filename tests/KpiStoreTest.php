@@ -2,13 +2,13 @@
 
 namespace Tests;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use TylerWoonton\LaravelKpi\KpiStore;
 use TylerWoonton\LaravelKpi\Models\Kpi;
 
 class KpiStoreTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseTransactions;
 
     public function getPackageProviders($app)
     {
